@@ -8,7 +8,9 @@ use strict;
 use warnings;
 
 use Role::Tiny::With;
-with 'Calendar::DatesRoles::FromData';
+
+with 'Calendar::DatesRoles::DataPreparer::CalendarVar::FromData';
+with 'Calendar::DatesRoles::DataUser::CalendarVar';
 
 1;
 # ABSTRACT: Academic calendar of Universitas Terbuka (postgraduate programs, program pascasarjana)
@@ -28,6 +30,8 @@ L<https://www.ut.ac.id/kalender-akademik/pps>
 =cut
 
 __DATA__
+
+#!default_lang: id
 
 #smt2019/20.1
 
